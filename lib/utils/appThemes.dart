@@ -9,6 +9,11 @@ class AppThemes {
     fontWeight: FontWeight.w700,
     fontSize: 30,
   );
+  static const black24TextStyle = TextStyle(
+    color: Colors.black,
+    fontWeight: FontWeight.w600,
+    fontSize: 24,
+  );
   static const black26TextStyle = TextStyle(
     color: Colors.black,
     fontWeight: FontWeight.w500,

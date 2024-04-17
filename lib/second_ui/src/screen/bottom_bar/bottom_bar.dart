@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_app/generated/assets.dart';
 import 'package:flutter_ui_app/second_ui/src/screen/home/home_screen.dart';
+import 'package:flutter_ui_app/utils/appThemes.dart';
 import 'package:flutter_ui_app/utils/color_constant.dart'; // Import StatisticsPage here
 
 class BottomBar extends StatefulWidget {
@@ -34,6 +35,7 @@ class _BottomBarState extends State<BottomBar> {
           child: _widgetOptions.elementAt(_selectedIndex),
         ),
         bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Image.asset(
@@ -72,11 +74,19 @@ class _BottomBarState extends State<BottomBar> {
             ),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.orange,
+          selectedItemColor: HexColor(ColorConstants.primaryColor),
           unselectedItemColor: Colors.grey,
           showSelectedLabels: true,
           showUnselectedLabels: true,
           onTap: _onItemTapped,
+          selectedLabelStyle: AppThemes.black12TextStyle.copyWith(
+            color: HexColor(ColorConstants.primaryColor),
+            fontWeight: FontWeight.w700,
+          ),
+          unselectedLabelStyle: AppThemes.black12TextStyle.copyWith(
+            color: HexColor(ColorConstants.primaryColor),
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
     );
@@ -89,7 +99,10 @@ class ShopPage extends StatelessWidget {
     return Center(
       child: Text(
         'Shop Page',
-        style: TextStyle(fontSize: 24),
+        style: AppThemes.white26TextStyle.copyWith(
+          color: HexColor(ColorConstants.primaryColor),
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }
@@ -101,7 +114,10 @@ class MessagePage extends StatelessWidget {
     return Center(
       child: Text(
         'Message Page',
-        style: TextStyle(fontSize: 24),
+        style: AppThemes.white26TextStyle.copyWith(
+          color: HexColor(ColorConstants.primaryColor),
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }
@@ -113,7 +129,10 @@ class SellPage extends StatelessWidget {
     return Center(
       child: Text(
         'Sell Page',
-        style: TextStyle(fontSize: 24),
+        style: AppThemes.white26TextStyle.copyWith(
+          color: HexColor(ColorConstants.primaryColor),
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }
@@ -125,7 +144,10 @@ class SettingPage extends StatelessWidget {
     return Center(
       child: Text(
         'Settings Page',
-        style: TextStyle(fontSize: 24),
+        style: AppThemes.white26TextStyle.copyWith(
+          color: HexColor(ColorConstants.primaryColor),
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }

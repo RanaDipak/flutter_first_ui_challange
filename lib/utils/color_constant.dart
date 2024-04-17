@@ -18,6 +18,9 @@ class ColorConstants {
   static const String brandBorderColor = "#4C291D";
   static const String popRatingColor = "#B9B9B9";
   static const String popPriceColor = "#7A7A7A";
+  static const String bannerColor = "#E7E0D8";
+  static const String bannerDiscountColor = "#526D5A";
+  static const String bannerBtnColor = "#EC7A6C";
 }
 
 class HexColor extends Color {

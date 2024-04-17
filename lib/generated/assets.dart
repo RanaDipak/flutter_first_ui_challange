@@ -33,4 +33,11 @@ class Assets {
   static const String pop2Icon = 'assets/second_ui/popular/pop2.jpg';
   static const String pop3Icon = 'assets/second_ui/popular/pop3.jpg';
   static const String ratingIcon = 'assets/second_ui/popular/rating.png';
+  static const String logoIcon = 'assets/second_ui/logo.png';
+  static const String heartIcon = 'assets/second_ui/heart.png';
+  static const String smHeartIcon = 'assets/second_ui/smHeart.png';
+  static const String fillHeartIcon = 'assets/second_ui/fillHeart.png';
+  static const String bannerIcon = 'assets/second_ui/banner.png';
+  static const String bannerTopIcon = 'assets/second_ui/bannerTop.png';
+  static const String bannerBottomIcon = 'assets/second_ui/bannerBottom.png';
 }
