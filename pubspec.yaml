@@ -1,4 +1,4 @@
-name: flutter_first_ui
+name: flutter_ui_app
 description: "A new Flutter project."
 
 
@@ -15,7 +15,7 @@ dependencies:
 
   
   cupertino_icons: ^1.0.6
-  flutter_charts: ^0.5.2
+#  flutter_charts: ^0.5.2
   semicircle_indicator: ^1.1.1
   syncfusion_flutter_charts: ^21.2.4
 
@@ -33,8 +33,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/Statistics/
-    - assets/
+    - assets/first_ui/
+    - assets/second_ui/
+    - assets/second_ui/category/
+    - assets/second_ui/popular/
 
 
   

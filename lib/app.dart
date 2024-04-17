@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'app/src/screen/bottombar.dart';
+import 'package:flutter_ui_app/second_ui/src/screen/bottom_bar/bottom_bar.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -10,7 +9,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: HomeScreen(),
-      home: BottomBarDashboard(),
+      // home: BottomBarDashboard(),/// first ui
+      home: BottomBar(),
     );
   }
 }
