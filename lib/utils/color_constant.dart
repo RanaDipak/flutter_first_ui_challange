@@ -14,13 +14,13 @@ class ColorConstants {
   static const String dropDownTextColor = "#A46CEC";
 
   /// Second UI
-  static const String primaryColor = "#4B281B";
-  static const String brandBorderColor = "#4C291D";
-  static const String popRatingColor = "#B9B9B9";
-  static const String popPriceColor = "#7A7A7A";
-  static const String bannerColor = "#E7E0D8";
-  static const String bannerDiscountColor = "#526D5A";
-  static const String bannerBtnColor = "#EC7A6C";
+  static Color primaryColor = HexColor("#4B281B");
+  static Color brandBorderColor = HexColor("#4C291D");
+  static Color popRatingColor = HexColor("#B9B9B9");
+  static Color popPriceColor = HexColor("#7A7A7A");
+  static Color bannerColor = HexColor("#E7E0D8");
+  static Color bannerDiscountColor = HexColor("#526D5A");
+  static Color bannerBtnColor = HexColor("#EC7A6C");
 }
 
 class HexColor extends Color {

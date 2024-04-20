@@ -1,71 +1,40 @@
 name: flutter_ui_app
 description: "A new Flutter project."
 
-
-publish_to: 'none' 
-
+publish_to: 'none'
 version: 1.0.0+1
-
 environment:
   sdk: '>=3.3.0 <4.0.0'
-
 dependencies:
   flutter:
     sdk: flutter
-
-  
   cupertino_icons: ^1.0.6
 #  flutter_charts: ^0.5.2
   semicircle_indicator: ^1.1.1
   syncfusion_flutter_charts: ^21.2.4
-
-
-
+  get: ^4.6.6
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
   flutter_lints: ^3.0.0
 
 flutter:
-
   uses-material-design: true
-
   assets:
     - assets/first_ui/
     - assets/second_ui/
     - assets/second_ui/category/
     - assets/second_ui/popular/
 
-
-  
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  fonts:
+    - family: Montserrat
+      fonts:
+          - asset: assets/fonts/Montserrat-Black.ttf
+          - asset: assets/fonts/Montserrat-Bold.ttf
+          - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          - asset: assets/fonts/Montserrat-ExtraLight.ttf
+          - asset: assets/fonts/Montserrat-Light.ttf
+          - asset: assets/fonts/Montserrat-Medium.ttf
+          - asset: assets/fonts/Montserrat-Regular.ttf
+          - asset: assets/fonts/Montserrat-SemiBold.ttf
+          - asset: assets/fonts/Montserrat-Thin.ttf

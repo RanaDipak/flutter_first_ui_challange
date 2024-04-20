@@ -40,51 +40,51 @@ class _BottomBarState extends State<BottomBar> {
             BottomNavigationBarItem(
               icon: Image.asset(
                 Assets.homeIcon,
-                color: HexColor(ColorConstants.primaryColor),
+                color: ColorConstants.primaryColor,
               ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Image.asset(
                 Assets.shopIcon,
-                color: HexColor(ColorConstants.primaryColor),
+                color: ColorConstants.primaryColor,
               ),
               label: 'Shop',
             ),
             BottomNavigationBarItem(
               icon: Image.asset(
                 Assets.chatIcon,
-                color: HexColor(ColorConstants.primaryColor),
+                color: ColorConstants.primaryColor,
               ),
               label: 'Messages',
             ),
             BottomNavigationBarItem(
               icon: Image.asset(
                 Assets.coinIcon,
-                color: HexColor(ColorConstants.primaryColor),
+                color: ColorConstants.primaryColor,
               ),
               label: 'Sell',
             ),
             BottomNavigationBarItem(
               icon: Image.asset(
                 Assets.settingIcon,
-                color: HexColor(ColorConstants.primaryColor),
+                color: ColorConstants.primaryColor,
               ),
               label: 'Settings',
             ),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: HexColor(ColorConstants.primaryColor),
+          selectedItemColor: ColorConstants.primaryColor,
           unselectedItemColor: Colors.grey,
           showSelectedLabels: true,
           showUnselectedLabels: true,
           onTap: _onItemTapped,
           selectedLabelStyle: AppThemes.black12TextStyle.copyWith(
-            color: HexColor(ColorConstants.primaryColor),
+            color: ColorConstants.primaryColor,
             fontWeight: FontWeight.w700,
           ),
           unselectedLabelStyle: AppThemes.black12TextStyle.copyWith(
-            color: HexColor(ColorConstants.primaryColor),
+            color: ColorConstants.primaryColor,
             fontWeight: FontWeight.w700,
           ),
         ),
@@ -100,7 +100,7 @@ class ShopPage extends StatelessWidget {
       child: Text(
         'Shop Page',
         style: AppThemes.white26TextStyle.copyWith(
-          color: HexColor(ColorConstants.primaryColor),
+          color: ColorConstants.primaryColor,
           fontWeight: FontWeight.w700,
         ),
       ),
@@ -115,7 +115,7 @@ class MessagePage extends StatelessWidget {
       child: Text(
         'Message Page',
         style: AppThemes.white26TextStyle.copyWith(
-          color: HexColor(ColorConstants.primaryColor),
+          color: ColorConstants.primaryColor,
           fontWeight: FontWeight.w700,
         ),
       ),
@@ -130,7 +130,7 @@ class SellPage extends StatelessWidget {
       child: Text(
         'Sell Page',
         style: AppThemes.white26TextStyle.copyWith(
-          color: HexColor(ColorConstants.primaryColor),
+          color: ColorConstants.primaryColor,
           fontWeight: FontWeight.w700,
         ),
       ),
@@ -145,7 +145,7 @@ class SettingPage extends StatelessWidget {
       child: Text(
         'Settings Page',
         style: AppThemes.white26TextStyle.copyWith(
-          color: HexColor(ColorConstants.primaryColor),
+          color: ColorConstants.primaryColor,
           fontWeight: FontWeight.w700,
         ),
       ),
