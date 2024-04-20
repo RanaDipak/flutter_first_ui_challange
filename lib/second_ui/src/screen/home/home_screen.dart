@@ -375,12 +375,14 @@ class HomeScreen extends StatelessWidget {
                     width: 2, // Border width
                   ),
                 ),
-                child: Text(
-                  getBrandList[index].name,
-                  textAlign: TextAlign.center,
-                  style: AppThemes.black14TextStyle.copyWith(
-                    color: HexColor(ColorConstants.primaryColor),
-                    fontWeight: FontWeight.w500,
+                child: Center(
+                  child: Text(
+                    getBrandList[index].name,
+                    // textAlign: TextAlign.center,
+                    style: AppThemes.black14TextStyle.copyWith(
+                      color: HexColor(ColorConstants.primaryColor),
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
               ),
@@ -402,21 +404,9 @@ class HomeScreen extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // Container(
-                    //   width: 100,
-                    //   height: 100,
-                    //   decoration: BoxDecoration(
-                    //     shape: BoxShape.circle,
-                    //     image: DecorationImage(
-                    //       fit: BoxFit.fill, // Choose your desired BoxFit option
-                    //       image:
-                    //           AssetImage(getCategoryDataList[index].imageName),
-                    //     ),
-                    //   ),
-                    // ),
                     SizedBox(
-                      height: 100,
-                      width: 100,
+                      height: 80,
+                      width: 80,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(
                             50), // Border radius for the image
