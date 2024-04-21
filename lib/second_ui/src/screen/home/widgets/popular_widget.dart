@@ -15,12 +15,12 @@ class PopularWidget extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemCount: getPopularDataList.length,
           itemBuilder: (BuildContext context, int index) {
-            return Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 10.0),
-                  child: Column(
+            return Padding(
+              padding: const EdgeInsets.only(right: 15.0),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -48,7 +48,7 @@ class PopularWidget extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          SizedBox(width: 15),
+                          // SizedBox(width: 5),
                           Row(
                             children: [
                               Image.asset(Assets.ratingIcon),
@@ -113,20 +113,20 @@ class PopularWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
-                Positioned(
-                  top: 0,
-                  right: 20,
-                  child: Image.asset(
-                    getPopularDataList[index].isLike!
-                        ? Assets.fillHeartIcon
-                        : Assets.smHeartIcon,
-                    color: Colors.red,
-                    width: 40,
-                    height: 40,
+                  Positioned(
+                    top: 0,
+                    right: 8,
+                    child: Image.asset(
+                      getPopularDataList[index].isLike!
+                          ? Assets.fillHeartIcon
+                          : Assets.smHeartIcon,
+                      color: Colors.red,
+                      width: 40,
+                      height: 40,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             );
           }),
     );
